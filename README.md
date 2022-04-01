@@ -15,5 +15,4 @@ http://cdn.kernel.org/pub/linux/kernel/
 For this tutorial version(for beginners);
 File type must be "tar.xz" for both of them.
 
-
-
+I will be write all of this soon.
