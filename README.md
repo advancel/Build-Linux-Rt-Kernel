@@ -33,3 +33,19 @@ Uppercase X's are must be numbers.
 - Copy your systems config to extracted kernel folder : 
 `$ cp /boot/config[kernel name] .config` 
 (<font color="red">Important note: You must copy config that lower version than downloaded new kernel!</font>)
+- Prepare config for new kernel :
+`make oldconfig`
+After writing this you should see question with choices and choose Fully Preemptible Kernel(Should be 4th option but not sure.)
+Then press enter for all or if you know anything about asking thing you can answer it but i'm not responsible for that.
+##4. Build
+- Disable old config keys for new build :
+`scripts/config --disable SYSTEM_REVOCATION_KEYS`
+`scripts/config --disable SYSTEM_TRUSTED_KEYS`
+`scripts/config --disable CONFIG_DEBUG_INFO_BTF`
+- Finally build it!
+`make -j[core count] deb-pkg` (You should write your cpu's core count after -j option ex;  make -j8 deb-pkg).
+
+<font color="red">Note:</font> Build process taking so much time. Please be patient. 
+You should know that, if you do it on your first try you're so lucky person!
+
+
