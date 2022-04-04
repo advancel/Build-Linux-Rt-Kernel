@@ -6,7 +6,7 @@ sudo apt-get build-dep linux (you should enable dependency repositories) <br>
 sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot
 <h2> 2. Download Rt Patch and Kernel </h2>
 <p>
-<font color="red">**IMPORTANT NOTE!**</font>
+  <font color="red"><b>IMPORTANT NOTE!</b></font>
 **The Rt Patch and Kernel must be same version!
 Also (for this tutorial) you must download higher version kernel than yours. So check it by write on terminal : **
 `$ uname -a`</p>
