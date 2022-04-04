@@ -15,7 +15,7 @@ For Kernel :<br>
 http://cdn.kernel.org/pub/linux/kernel/</br>
 For this tutorial version;</br>
 File type must be "tar.xz" for both of them.</br>
-<h2>3. Preparing for build</h2>
+## 3. Preparing for build
 After download you have 2 tar.xz files like this:</br>
 Uppercase X's are must be numbers.</br>
 [1]) linux-X.X.X.tar.xz</br>
