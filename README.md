@@ -21,7 +21,7 @@ After download you have 2 tar.xz files like this:<br>
 Uppercase X's are must be numbers.<br>
 [1]) linux-X.X.X.tar.xz<br>
 [2]) patch-X.X.X-rtX.patch.xz or patch-X.X.X-rtX-rcX.patch.xz.<br>
-- Take this files into same folder.<br>
+- `Take` this files into same folder.<br>
 - You must be sure that you have enough space on disk(around 35-40gb but may change between versions).<br>
 - Open terminal inside this folder.<br>
 - Extract kernel : <br>
