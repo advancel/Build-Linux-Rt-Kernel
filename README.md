@@ -46,5 +46,4 @@ Then press enter for all or if you know anything about asking thing you can answ
 </br>
 Note: Build process taking so much time. Please be patient. </br>
 You should know that, if you do it on your first try you're so lucky person!<br>
-⋅⋅* Ahmeeet
 
