@@ -23,28 +23,28 @@ Uppercase X's are must be numbers.</br>
 - Take this files into same folder.</br>
 - You must be sure that you have enough space on disk(around 35-40gb but may change between versions).</br>
 - Open terminal inside this folder.</br>
-- Extract kernel : <br>
-<code>$ tar -xf [kernel package filename]</code><br>
-- Go to extracted kernel folder : <br>
-<code>$ cd [kernel package foldername]</code><br>
-- Extract RT patch and patch to kernel : <br>
-<code>$ xzcat ../[rt patch filename] | patch -p1</code><br>
-- Copy your systems config to extracted kernel folder : <br>
-<code>$ cp /boot/config[kernel name] .config</code> <br>
-(<font color="red">Important note: You must copy config that lower version than downloaded new kernel!</font>)<br>
-- Prepare config for new kernel :<br>
-<code>make oldconfig</code><br>
-After writing this you should see question with choices and choose Fully Preemptible Kernel(Should be 4th option but not sure.)<br>
-Then press enter for all or if you know anything about asking thing you can answer it but i'm not responsible for that.<br>
-<h2>4. Build</h2>
-- Disable old config keys for new build :<br>
-<code>scripts/config --disable SYSTEM_REVOCATION_KEYS</code><br>
-<code>scripts/config --disable SYSTEM_TRUSTED_KEYS</code><br>
-<code>scripts/config --disable CONFIG_DEBUG_INFO_BTF</code><br>
-- Finally build it!<br>
-<code>make -j[core count] deb-pkg</code> (You should write your cpu's core count after -j option ex;  <code>make -j8 deb-pkg</code>).<br>
-<br>
-<font color="red">Note:</font> Build process taking so much time. Please be patient. <br>
+- Extract kernel : </br>
+`$ tar -xf [kernel package filename]`</br>
+- Go to extracted kernel folder : </br>
+`$ cd [kernel package foldername]`</br>
+- Extract RT patch and patch to kernel : </br>
+`$ xzcat ../[rt patch filename] | patch -p1`</br>
+- Copy your systems config to extracted kernel folder : </br>
+`$ cp /boot/config[kernel name] .config` </br>
+(Important note: You must copy config that lower version than downloaded new kernel!)</br>
+- Prepare config for new kernel :</br>
+`make oldconfig`</br>
+After writing this you should see question with choices and choose Fully Preemptible Kernel(Should be 4th option but not sure.)</br>
+Then press enter for all or if you know anything about asking thing you can answer it but i'm not responsible for that.</br>
+## 4. Build
+- Disable old config keys for new build :</br>
+`scripts/config --disable SYSTEM_REVOCATION_KEYS`</br>
+`scripts/config --disable SYSTEM_TRUSTED_KEYS`</br>
+`scripts/config --disable CONFIG_DEBUG_INFO_BTF`</br>
+- Finally build it!</br>
+`make -j[core count] deb-pkg` (You should write your cpu's core count after -j option ex;  `make -j8 deb-pkg`).</br>
+</br>
+Note: Build process taking so much time. Please be patient. </br>
 You should know that, if you do it on your first try you're so lucky person!<br>
 ⋅⋅* Ahmeeet
 
