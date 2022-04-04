@@ -5,9 +5,7 @@ This tutorial is shows how to build a Preempt_RT Linux Kernel
 ` $ sudo apt-get build-dep linux` (you should enable dependency repositories)<br>
 ` $ sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot`
 ## 2. Download Rt Patch and Kernel
-```diff
--**IMPORTANT NOTE!**</br>
-```
+<span style="color:red;">**IMPORTANT NOTE!**</span></br>
 **The Rt Patch and Kernel must be same version!**</br>
 **Also (for this tutorial) you must download higher version kernel than yours. So check it by write on terminal :**</br>
 `$ uname -a`</br>
