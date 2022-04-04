@@ -8,21 +8,21 @@ This tutorial is shows how to build a Preempt_RT Linux Kernel
 **IMPORTANT NOTE!**</br>
 **The Rt Patch and Kernel must be same version!**</br>
 **Also (for this tutorial) you must download higher version kernel than yours. So check it by write on terminal :**</br>
-`$ uname -a`<br>
-For Rt Patch :<br>
-http://cdn.kernel.org/pub/linux/kernel/projects/rt/<br>
+`$ uname -a`</br>
+For Rt Patch :</br>
+http://cdn.kernel.org/pub/linux/kernel/projects/rt/</br>
 For Kernel :<br>
-http://cdn.kernel.org/pub/linux/kernel/<br>
-For this tutorial version;<br>
-File type must be "tar.xz" for both of them.<br>
+http://cdn.kernel.org/pub/linux/kernel/</br>
+For this tutorial version;</br>
+File type must be "tar.xz" for both of them.</br>
 <h2>3. Preparing for build</h2>
-After download you have 2 tar.xz files like this:<br>
-Uppercase X's are must be numbers.<br>
-[1]) linux-X.X.X.tar.xz<br>
-[2]) patch-X.X.X-rtX.patch.xz or patch-X.X.X-rtX-rcX.patch.xz.<br>
-- Take this files into same folder.<br>
-- You must be sure that you have enough space on disk(around 35-40gb but may change between versions).<br>
-- Open terminal inside this folder.<br>
+After download you have 2 tar.xz files like this:</br>
+Uppercase X's are must be numbers.</br>
+[1]) linux-X.X.X.tar.xz</br>
+[2]) patch-X.X.X-rtX.patch.xz or patch-X.X.X-rtX-rcX.patch.xz.</br>
+- Take this files into same folder.</br>
+- You must be sure that you have enough space on disk(around 35-40gb but may change between versions).</br>
+- Open terminal inside this folder.</br>
 - Extract kernel : <br>
 <code>$ tar -xf [kernel package filename]</code><br>
 - Go to extracted kernel folder : <br>
