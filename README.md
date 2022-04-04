@@ -45,5 +45,5 @@ Then press enter for all or if you know anything about asking thing you can answ
 `make -j[core count] deb-pkg` (You should write your cpu's core count after -j option ex;  `make -j8 deb-pkg`).</br>
 </br>
 Note: Build process taking so much time. Please be patient. </br>
-You should know that, if you do it on your first try you're so lucky person!<br>
+You should know that, if you build it on your first try you're so lucky person!<br>
 
